@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns:cenc="urn:mpeg:cenc:2013" xmlns:mspr="urn:microsoft:playready" xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT4.000S" type="static" mediaPresentationDuration="PT9M56.416S">
+    <BaseURL>https://numminorihsf.github.io/mse-demo/streams/</BaseURL>
+    <Period>
+        <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="852" maxHeight="478" maxFrameRate="24">
+            <Representation id="vid4" codecs="avc1.64001E" width="852" height="478" scanType="progressive" frameRate="24" bandwidth="1615594">
+                <SegmentTemplate timescale="1000" media="$RepresentationID$/fragment-$Number$-$RepresentationID$.m4s" initialization="$RepresentationID$/init-$RepresentationID$.mp4" startNumber="1">
+                    <SegmentTimeline>
+                        <S d="4000" r="148"/>
+                        <S d="416"/>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="vid3" codecs="avc1.4D401E" width="640" height="360" scanType="progressive" frameRate="24" bandwidth="947556">
+                <SegmentTemplate timescale="1000" media="$RepresentationID$/fragment-$Number$-$RepresentationID$.m4s" initialization="$RepresentationID$/init-$RepresentationID$.mp4" startNumber="1">
+                    <SegmentTimeline>
+                        <S d="4000" r="148"/>
+                        <S d="416"/>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="vid2" codecs="avc1.4D4014" width="428" height="240" scanType="progressive" frameRate="24" bandwidth="812038">
+                <SegmentTemplate timescale="1000" media="$RepresentationID$/fragment-$Number$-$RepresentationID$.m4s" initialization="$RepresentationID$/init-$RepresentationID$.mp4" startNumber="1">
+                    <SegmentTimeline>
+                        <S d="4000" r="148"/>
+                        <S d="416"/>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+            <Representation id="vid1" codecs="avc1.4D400C" width="256" height="144" scanType="progressive" frameRate="24" bandwidth="411914">
+                <SegmentTemplate timescale="1000" media="$RepresentationID$/fragment-$Number$-$RepresentationID$.m4s" initialization="$RepresentationID$/init-$RepresentationID$.mp4" startNumber="1">
+                    <SegmentTimeline>
+                        <S d="4000" r="148"/>
+                        <S d="416"/>
+                    </SegmentTimeline>
+                </SegmentTemplate>
+            </Representation>
+        </AdaptationSet>
+    </Period>
+</MPD>
